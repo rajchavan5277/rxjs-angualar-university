@@ -67,11 +67,11 @@ $http.subscribe(resp => {
 // Map operator with pipe()
 //const post$ = createHttpObservable();
 const post$ =  $http.pipe(
-  map((val) => Object.values(val)) 
+  map((val) => Object.values(val))
 )
 
 post$.subscribe(resp => {
-  console.log(resp); 
+  console.log(resp);
 })
 
 
